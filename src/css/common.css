@@ -27,6 +27,8 @@ img {
 .field {
   display: flex;
   font-size: 48px;
+  /* background-color: rgba(0, 0, 0, .5);
+  color: #fff; */
 }
 
 .value {

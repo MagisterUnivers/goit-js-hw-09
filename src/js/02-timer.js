@@ -2,8 +2,8 @@ import flatpickr from 'flatpickr';
 import Notiflix from 'notiflix';
 import 'flatpickr/dist/flatpickr.min.css';
 
-startBtn = document.querySelector('[data-start]');
-mainDiv = document.querySelector('.timer');
+const startBtn = document.querySelector('[data-start]');
+const mainDiv = document.querySelector('.timer');
 
 refs = {
   body: document.querySelector('body'),
