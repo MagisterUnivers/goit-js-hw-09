@@ -126,7 +126,7 @@ function convertMs(ms) {
   return { formattedDays, formattedHours, formattedMinutes, formattedSeconds };
 }
 
-flatpickr(inputEl, options);
+let x = flatpickr(inputEl, options);
 // flatpickr(inputEl, {options}); прикольный способ
 
 // // console.log(convertMs(2000)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
