@@ -24,6 +24,37 @@ img {
   |============================
 */
 
+
+
+/**
+  |============================
+  | Overlay
+  |============================
+*/
+
+#overlay {
+  position: fixed;
+  /* display: none; */
+  width: 50vh;
+  height: 50vh;
+  top: 15%;
+  left: 75%;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+
+/**
+  |============================
+  | Task 2
+  |============================
+*/
+
+
 .field {
   display: flex;
   font-size: 48px;
