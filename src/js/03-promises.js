@@ -1,6 +1,6 @@
 import Notiflix from 'notiflix';
 
-refs = {
+const refs = {
   form: document.querySelector('.form'),
   InputF: document.querySelector('input[name="delay"'),
   inputS: document.querySelector('input[name="step"]'),
