@@ -7,6 +7,10 @@ const refs = {
   sound: document.getElementById('myAudio'),
 };
 
+// const audio = new Audio(
+//   'https://drive.google.com/uc?id=10yOYDe84HgLsUV-7-WdjVS0Qd8eRuI5g'
+// );
+
 let timer = null;
 refs.stopBtn.disabled = true;
 refs.startBtn.style.marginTop = '10%';
@@ -21,6 +25,7 @@ refs.startBtn.addEventListener('click', () => {
   refs.stopBtn.disabled = false;
   // refs.sound.play();
   timer = setInterval(() => {
+    // audio.play();
     refs.body.style.backgroundColor = getRandomHexColor();
     // refs.body.style.backgroundImage =
     //   'url(https://media3.giphy.com/media/GeimqsH0TLDt4tScGw/giphy.gif?cid=6c09b9520e01e25be92d5c5074f397f36bb3cc5f6d554085&rid=giphy.gif&ct=g)';
@@ -30,6 +35,7 @@ refs.startBtn.addEventListener('click', () => {
 
 refs.stopBtn.addEventListener('click', () => {
   clearInterval(timer);
+  audio.pause();
   // refs.sound.pause();
   refs.startBtn.disabled = false;
   refs.stopBtn.disabled = true;

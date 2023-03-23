@@ -16,3 +16,40 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+/**
+  |============================
+  | Mine
+  |============================
+*/
+
+.field {
+  display: flex;
+  font-size: 48px;
+}
+
+.value {
+  position: relative;
+  min-width: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.value::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+.value:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  /* right: -15px; */
+}
