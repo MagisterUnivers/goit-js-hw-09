@@ -6,7 +6,7 @@ const inputEl = document.getElementById('[#datetime-picker]');
 const startBtn = document.querySelector('[data-start]');
 const mainDiv = document.querySelector('.timer');
 
-refs = {
+const refs = {
   body: document.querySelector('body'),
   days: document.querySelector('[data-days]'),
   hours: document.querySelector('[data-hours]'),
