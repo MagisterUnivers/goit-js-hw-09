@@ -2,7 +2,7 @@ import flatpickr from 'flatpickr';
 import Notiflix from 'notiflix';
 import 'flatpickr/dist/flatpickr.min.css';
 
-inputEl = document.getElementById('datetime-picker');
+inputEl = document.getElementById('#datetime-picker');
 startBtn = document.querySelector('[data-start]');
 mainDiv = document.querySelector('.timer');
 
@@ -126,7 +126,9 @@ function convertMs(ms) {
   return { formattedDays, formattedHours, formattedMinutes, formattedSeconds };
 }
 
-const calendar = flatpickr('#datetime-picker', options);
+flatpickr(inputEl, options);
+// const calendar = flatpickr('#datetime-picker', options);
+// const calendar = flatpickr(inputEl, options) - не работает, хотя на локале все ок
 // flatpickr(inputEl, {options}); прикольный способ
 
 // // console.log(convertMs(2000)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
