@@ -35,7 +35,7 @@ refs.startBtn.addEventListener('click', () => {
 
 refs.stopBtn.addEventListener('click', () => {
   clearInterval(timer);
-  audio.pause();
+  // audio.pause();
   // refs.sound.pause();
   refs.startBtn.disabled = false;
   refs.stopBtn.disabled = true;
