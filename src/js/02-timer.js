@@ -2,6 +2,7 @@ import flatpickr from 'flatpickr';
 import Notiflix from 'notiflix';
 import 'flatpickr/dist/flatpickr.min.css';
 
+const inputEl = document.getElementById('[#datetime-picker]');
 const startBtn = document.querySelector('[data-start]');
 const mainDiv = document.querySelector('.timer');
 
