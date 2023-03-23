@@ -33,7 +33,6 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    console.log(selectedDates);
     timeLeft = selectedDates[0].getTime(); // selectedDates[0].getTime() - options.defaultDate.getTime()
 
     if (timeLeft <= Date.now()) {
@@ -74,10 +73,8 @@ startBtn.addEventListener(
 
       count = timeLeft - Date.now();
       // timeLeft -= Date.now();
-      console.log(timeLeft);
 
       let resultHowManyTo = convertMs(count);
-      console.log(resultHowManyTo);
 
       refs.days.innerHTML = `${resultHowManyTo.formattedDays}`;
       refs.hours.innerHTML = `${resultHowManyTo.formattedHours}`;
@@ -129,7 +126,7 @@ function convertMs(ms) {
   return { formattedDays, formattedHours, formattedMinutes, formattedSeconds };
 }
 
-flatpickr(inputEl, options);
+let flatpickr(inputEl, options);
 // flatpickr(inputEl, {options}); прикольный способ
 
 // // console.log(convertMs(2000)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
