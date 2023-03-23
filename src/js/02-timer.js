@@ -126,7 +126,7 @@ function convertMs(ms) {
   return { formattedDays, formattedHours, formattedMinutes, formattedSeconds };
 }
 
-flatpickr(inputEl, options);
+const calendar = flatpickr('#datetime-picker', options);
 // const calendar = flatpickr('#datetime-picker', options);
 // const calendar = flatpickr(inputEl, options) - не работает, хотя на локале все ок
 // flatpickr(inputEl, {options}); прикольный способ
